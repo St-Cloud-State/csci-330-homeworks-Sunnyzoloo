@@ -1,0 +1,42 @@
+Script started on 2025-01-27 02:57:07+00:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="95" LINES="20"]
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork1 [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* ::  ;; Question3 a
+(CAR (CDR (CDR '(a b x d))))
+
+X
+* ::  l ;; Question4 b   3 b
+(CAR (CAR (CDR (CAR (CDR '(a (b (x d))))))))
+
+X
+* ;; Question3 c
+(CAR (CDR (CAR (CDR (CAR (CAR '(((a (b (x) d))))))))))
+
+(X)
+* ;; Question4 a
+(cons 'a (cons 'b (cons 'x (cons 'd nil))))
+
+(A B X D)
+* ;; Question4 b
+(cons 'a (cons (cons 'b (cons (cons 'x (cons 'd nil)) nil)) nil))
+
+(A (B (X D)))
+* ;;Ques     Question4 c
+(cons (cons (cons 'a (cons (cons 'b (cons (cons 'x nil) (cons 'd nil))) nil)) nil) nil)
+
+(((A (B (X) D))))
+* (quit)
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork1 [0;36m([1;31mmain[0;36m) [0m$ cat Q3and4
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork1 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork1 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork1 [0;36m([1;31mmain[0;36m) [0m$ e
+c[Kx[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C^C
+[0;32m@Sunnyzoloo [1;31m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork1 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-01-27 03:00:16+00:00 [COMMAND_EXIT_CODE="130"]
