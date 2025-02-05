@@ -1,0 +1,196 @@
+Script started on 2025-02-05 01:36:53+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="160" LINES="15"]
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* ;3.1
+(NOT (EQUAL 3 (ABS -3)))
+
+NIL
+* ;3.2
+(/ (+ 8 12) 2)
+
+10
+* ;3.3
+ (+ (* 3 3) (* 4 4))
+
+25
+* ;3.7
+(defun miles-per-gallon(initial-odometer-reading   final-odometer-reading  gallons-consumed)         (/ ( -  final-odometer-reading  initial-odometer-reading) gallons-consumed))
+
+MILES-PER-GALLON
+* ;;test1 
+(miles-per-gallon 100 200 2)
+
+50
+* ;3.10
+(third '(the quick brown fox))
+
+BROWN
+* (list 2 'and 2 'is 4)
+
+(2 AND 2 IS 4)
+* (+ 1 (length (list t t t t)))
+
+5
+* (cons 'patrick '(seymour marvin))
+
+(PATRICK SEYMOUR MARVIN)
+* (cons 'patrick (list 'seymour 'marvin))
+
+(PATRICK SEYMOUR MARVIN)
+* ;3.20
+(defun speak (x y) (list 'all x 'is y))
+
+SPEAK
+* (mystery '(dancing bear))
+; in: MYSTERY '(DANCING BEAR)
+;     (MYSTERY '(DANCING BEAR))
+; 
+; caught STYLE-WARNING:
+;   undefined function: MYSTERY
+; 
+; compilation unit finished
+;   Undefined function:
+;     MYSTERY
+;   caught 1 STYLE-WARNING condition
+
+debugger invoked on a UNDEFINED-FUNCTION in thread
+#<THREAD "main thread" RUNNING {9461061}>:
+  The function COMMON-LISP-USER::MYSTERY is undefined.
+
+Type HELP for debugger help, or (SB-EXT:EXIT) to exit from SBCL.
+
+restarts (invokable by number or by possibly-abbreviated name):
+  0: [ABORT] Exit debugger, returning to top level.
+
+("undefined function" (DANCING BEAR))
+0] ^Z
+[1]+  Stopped                 sbcl
+[0;32m@Sunnyzoloo [1;31m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo [0;36m([1;31mmain[0;36m) [0m$ sc[Kbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* ;3.10  20
+(defun mystery (x)  (list (second x) (first x)))(defun speak (x y)  (list 'all x 'is y))
+
+MYSTERY
+* 
+SPEAK
+* (mystery '(dancing bear))
+
+(BEAR DANCING)
+* (mystery '(dancing bear))
+
+(BEAR DANCING)
+* (mystery '(zowie))
+
+(NIL ZOWIE)
+* (mystery (list 'first 'second))
+
+(SECOND FIRST)
+* ;3.21
+(defun speak (x y) (list 'all 'x 'is 'y))(speak 'dogs 'great)
+; in: DEFUN SPEAK
+;     (SB-INT:NAMED-LAMBDA SPEAK
+;         (X Y)
+;       (BLOCK SPEAK (LIST 'ALL 'X 'IS 'Y)))
+; 
+; caught STYLE-WARNING:
+;   The variable X is defined but never used.
+; 
+; caught STYLE-WARNING:
+;   The variable Y is defined but never used.
+; 
+; compilation unit finished
+;   caught 2 STYLE-WARNING conditions
+WARNING: redefining COMMON-LISP-USER::SPEAK in DEFUN
+
+SPEAK
+* 
+(ALL X IS Y)
+* (defun speak (x y) (list 'all x 'is y))
+WARNING: redefining COMMON-LISP-USER::SPEAK in DEFUN
+
+SPEAK
+* (defun speak (x y) (list 'all x 'is y))
+WARNING: redefining COMMON-LISP-USER::SPEAK in DEFUN
+
+SPEAK
+* (defun speak (x y) (list 'all x 'is y))
+WARNING: redefining COMMON-LISP-USER::SPEAK in DEFUN
+
+SPEAK
+* (defun speak (x y) (list 'all x 'is y))
+WARNING: redefining COMMON-LISP-USER::SPEAK in DEFUN
+
+SPEAK
+* ;3.25
+(list 'cons t nil)
+
+(CONS T NIL)
+* (eval (list 'cons t nil))
+
+(T)
+* (eval (eval (list 'cons t nil)))
+; in: T
+;     (T)
+; 
+; caught WARNING:
+;   The function T is undefined, and its name is reserved by ANSI CL so that even
+;   if it were defined later, the code doing so would not be portable.
+; 
+; compilation unit finished
+;   Undefined function:
+;     T
+;   caught 1 WARNING condition
+
+debugger invoked on a UNDEFINED-FUNCTION in thread
+#<THREAD "main thread" RUNNING {9461061}>:
+  The function COMMON-LISP:T is undefined.
+
+Type HELP for debugger help, or (SB-EXT:EXIT) to exit from SBCL.
+
+restarts (invokable by number or by possibly-abbreviated name):
+  0: [ABORT] Exit debugger, returning to top level.
+
+("undefined function")
+0] ^Z
+[2]+  Stopped                 sbcl
+[0;32m@Sunnyzoloo [1;31m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (apply #'cons '(t nil))
+
+(T)
+* (eval nil)
+
+NIL
+* (eval (list 'eval nil))
+
+NIL
+* (list 'eval nil)
+
+(EVAL NIL)
+* ^Z
+[3]+  Stopped                 sbcl
+[0;32m@Sunnyzoloo [1;31m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+There are stopped jobs.
+[0;32m@Sunnyzoloo [1;31m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-02-05 01:46:35+00:00 [COMMAND_EXIT_CODE="1"]
