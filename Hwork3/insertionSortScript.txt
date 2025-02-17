@@ -1,0 +1,117 @@
+Script started on 2025-02-17 06:06:06+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="160" LINES="12"]
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (load "insertionSort.lisp")
+
+; file: /workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3/insertionSort.lisp
+; in: SETQ UNSORTED-LIST
+;     (SETQ UNSORTED-LIST '(4 3 6 7 2 5))
+; 
+; caught WARNING:
+;   undefined variable: UNSORTED-LIST
+; 
+; compilation unit finished
+;   Undefined variable:
+;     UNSORTED-LIST
+;   caught 1 WARNING condition
+
+; file: /workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3/insertionSort.lisp
+; in: SETQ SORTED-LIST
+;     (SETQ SORTED-LIST (INSERTION-SORT UNSORTED-LIST))
+; 
+; caught WARNING:
+;   undefined variable: SORTED-LIST
+
+;     (INSERTION-SORT UNSORTED-LIST)
+; 
+; caught WARNING:
+;   undefined variable: UNSORTED-LIST
+; 
+; compilation unit finished
+;   Undefined variables:
+;     SORTED-LIST UNSORTED-LIST
+;   caught 2 WARNING conditions
+Unsorted: (4 3 6 7 2 5)
+Sorted:   (2 3 4 5 6 7)
+T
+* (load "insertionSort.lisp")
+
+; file: /workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3/insertionSort.lisp
+; in: SETQ UNSORTED-LIST
+;     (SETQ UNSORTED-LIST '(4 3 2 5 3 2))
+; 
+; caught WARNING:
+;   undefined variable: UNSORTED-LIST
+; 
+; compilation unit finished
+;   Undefined variable:
+;     UNSORTED-LIST
+;   caught 1 WARNING condition
+
+; file: /workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3/insertionSort.lisp
+; in: SETQ SORTED-LIST
+;     (SETQ SORTED-LIST (INSERTION-SORT UNSORTED-LIST))
+; 
+; caught WARNING:
+;   undefined variable: SORTED-LIST
+
+;     (INSERTION-SORT UNSORTED-LIST)
+; 
+; caught WARNING:
+;   undefined variable: UNSORTED-LIST
+; 
+; compilation unit finished
+;   Undefined variables:
+;     SORTED-LIST UNSORTED-LIST
+;   caught 2 WARNING conditions
+Unsorted: (4 3 2 5 3 2)
+Sorted:   (2 2 3 3 4 5)
+T
+* (load "insertionSort.lisp")
+
+; file: /workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3/insertionSort.lisp
+; in: SETQ UNSORTED-LIST
+;     (SETQ UNSORTED-LIST '(11 2 3 2 1 4 3 66))
+; 
+; caught WARNING:
+;   undefined variable: UNSORTED-LIST
+; 
+; compilation unit finished
+;   Undefined variable:
+;     UNSORTED-LIST
+;   caught 1 WARNING condition
+
+; file: /workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3/insertionSort.lisp
+; in: SETQ SORTED-LIST
+;     (SETQ SORTED-LIST (INSERTION-SORT UNSORTED-LIST))
+; 
+; caught WARNING:
+;   undefined variable: SORTED-LIST
+
+;     (INSERTION-SORT UNSORTED-LIST)
+; 
+; caught WARNING:
+;   undefined variable: UNSORTED-LIST
+; 
+; compilation unit finished
+;   Undefined variables:
+;     SORTED-LIST UNSORTED-LIST
+;   caught 2 WARNING conditions
+Unsorted: (11 2 3 2 1 4 3 66)
+Sorted:   (1 2 2 3 3 4 11 66)
+T
+* ^Z
+[1]+  Stopped                 sbcl
+[0;32m@Sunnyzoloo [1;31m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+There are stopped jobs.
+[0;32m@Sunnyzoloo [1;31m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-02-17 06:07:02+00:00 [COMMAND_EXIT_CODE="1"]

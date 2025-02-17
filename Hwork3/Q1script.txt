@@ -1,0 +1,17 @@
+Script started on 2025-02-16 00:16:36+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="95" LINES="12"]
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ exitcleararg++ Q1.cpp
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ ./a.out
+Original array: 10 7 8 9 1 7 
+Sorted array: 1 7 7 8 9 10 
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ ./a.outg++ Q1.cpp
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ g++ Q1.cpp[3P./a.out
+Original array: 2 5 8 9 1 7 
+Sorted array: 1 2 5 7 8 9 
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ ./a.outg++ Q1.cpp
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ g++ Q1.cpp[3P./a.out
+Original array: 1 5 9 12 7 7 
+Sorted array: 1 5 7 7 9 12 
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-02-16 00:17:24+00:00 [COMMAND_EXIT_CODE="0"]

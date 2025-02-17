@@ -1,0 +1,14 @@
+Script started on 2025-02-16 00:08:28+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="95" LINES="19"]
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ sbcl --script merged[Ksort .lisp
+Original List: (5 3 8 6 2 7 4 1)
+Sorted List: (1 2 3 4 5 6 7 8)
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ sbcl --script mergesort.lisp
+Original List: (4 3 5 7 2 4 6)
+Sorted List: (2 3 4 4 5 6 7)
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ sbcl --script mergesort.lisp
+Original List: (2 1 8 7 6 8 4 3)
+Sorted List: (1 2 3 4 6 7 8 8)
+[0;32m@Sunnyzoloo [0m➜ [1;34m/workspaces/csci-330-homeworks-Sunnyzoloo/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-02-16 00:10:15+00:00 [COMMAND_EXIT_CODE="0"]
